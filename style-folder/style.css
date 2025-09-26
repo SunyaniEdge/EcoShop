@@ -232,7 +232,7 @@ nav .right{
 
 .sidebar-logo{
   width: 100%;
-  height: 13rem;
+  height: 14rem;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -267,14 +267,14 @@ nav .right{
 }
 
 .sidebar-logo small {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 800;
   font-family: 'Courier New', Courier;
-  color: var(--prd-name);
+  color: var(--bg-cl);
   padding: 0.3rem;
-  background-color: var(--btn-border-cl);
-  border-radius: 8px;
-  border: 0.1px solid var(--border-ble-cl);
+  background-color: rgb(34, 32, 32);
+  border-radius: 4px;
+  border: 0.1px solid transparent;
 }
 
 .sidebar-logo img {
@@ -362,7 +362,7 @@ nav .right{
   background: rgb(223, 215, 215);
   border-radius: 50%;
 }
-.privacy-policy {
+.sub3-section{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,10 +384,11 @@ RIGHT SIDEBAR SECTION
   right: 0;
   top: 5rem;
   background: var(--bg-cl);
-  position: absolute;
+  position: fixed;
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   border-start-start-radius: 1rem;
   transition: .3s ease;
+  z-index: 10000;
 }
 
 
@@ -417,6 +418,89 @@ RIGHT SIDEBAR SECTION
 .toggler2 img:hover{
   cursor: pointer;
 }
+
+/**
+* HERO SECTION
+**/
+.hero{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px 0;
+  background: var(--bg-cl);
+  height: 20rem;
+  box-shadow: 0 3px 7px rgba(56, 95, 128, 0.2);
+}
+
+.slider-container{
+  width: 414px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  transition: transform .5s ease-in-out;
+}
+
+.card{
+  min-width: 414px;
+  height: 250px;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.card img {
+  width: 80%;
+  height:94%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

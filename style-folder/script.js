@@ -25,16 +25,33 @@ window.addEventListener("click", function(e){
 
 // function {right sidebar} //
 toggler2.addEventListener("click", function(){
-  if(sidebar2.style.width === "120px"){
-    sidebar2.style.width = "220px";
+  if(sidebar2.style.width === "16px"){
+    sidebar2.style.width = "122px";
   } else {
-    sidebar2.style.width = "220px";
+    sidebar2.style.width = "122px";
   }
   }
 );
 
 window.addEventListener("click", function(e){
-  if(!sidebar2.style.width !== "220px" && (e.target !== toggler2)){
-    sidebar2.style.width = "120px";
+  if(!sidebar2.style.width !== "122px" && (e.target !== toggler2)){
+    sidebar2.style.width = "16px";
   }
-})
+});
+
+// CARDS AUTO SLIDE //
+const slider = document.getElementById("slider");
+let index = 0;
+
+function autoSlide() {
+  const cards = document.querySelectorAll(".card");
+  index ++;
+
+  if (index >= cards.length) {
+    index = 0; // go back to first card 
+  }
+
+  slider.style.transform = `translateX(-${index * (cards[0].offsetWidth + 20)}px)`;
+}
+
+setInterval(autoSlide, 6000);
