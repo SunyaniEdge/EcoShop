@@ -47,6 +47,7 @@ nav{
   justify-content: space-between;
   position: fixed;
   z-index: 1000;
+  top: 0;
   background-color: var(--nav-bg-cl);
   padding: 0.2rem 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -429,15 +430,19 @@ RIGHT SIDEBAR SECTION
   justify-content: center;
   align-items: flex-end;
   padding: 30px 0;
-  background: var(--bg-cl);
-  height: 20rem;
+  background: red;
+  height: 2rem;
   box-shadow: 0 3px 7px rgba(56, 95, 128, 0.2);
-}
-
-.slider-container{
-  width: 414px;
+  margin: 15rem 0;
   overflow: hidden;
 }
+
+
+.slider-container{
+  width: 207px;
+  overflow: hidden;
+}
+
 
 .slider {
   display: flex;
@@ -455,16 +460,14 @@ RIGHT SIDEBAR SECTION
   color: white;
   font-size: 22px;
   border-radius: 10px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   z-index: 2;
 }
 
 .card img {
-  width: 80%;
-  height:94%;
+  height: 120%;
+  width: 100%
 }
-
-
 
 
 
